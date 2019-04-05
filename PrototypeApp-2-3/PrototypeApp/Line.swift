@@ -13,7 +13,7 @@
 //draws a circle inside the square
 
 class Line: UIView {
-    
+ /*
     var circle = UIBezierPath()
     
     //let rect = CGRect(x: 88, y: 161, width: 240, height: 240)
@@ -39,5 +39,6 @@ class Line: UIView {
 
     }
     
-    
+*/
 } 
+

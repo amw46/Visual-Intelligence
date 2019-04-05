@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4BBFC49E222CB09000B6BB54 /* eye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4BBFC49D222CB09000B6BB54 /* eye.jpg */; };
 		B21BDF8321867EC6000294F5 /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21BDF8221867EC6000294F5 /* Line.swift */; };
-		B28DB363221C424800E7FC3A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28DB362221C424800E7FC3A /* test.jpg */; };
-		B28DB365221C9D1E00E7FC3A /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B28DB364221C9D1E00E7FC3A /* test.jpg */; };
+		B245055A22567CCF006148C3 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B245055922567CCF006148C3 /* DemoView.swift */; };
 		B2EBB9502173C4BB0007DC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBB94F2173C4BB0007DC7D /* AppDelegate.swift */; };
 		B2EBB9522173C4BB0007DC7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2EBB9512173C4BB0007DC7D /* ViewController.swift */; };
 		B2EBB9552173C4BB0007DC7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B2EBB9532173C4BB0007DC7D /* Main.storyboard */; };
@@ -37,9 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4BBFC49D222CB09000B6BB54 /* eye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eye.jpg; sourceTree = "<group>"; };
 		B21BDF8221867EC6000294F5 /* Line.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
-		B28DB362221C424800E7FC3A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = ../../test.jpg; sourceTree = "<group>"; };
-		B28DB364221C9D1E00E7FC3A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = test.jpg; path = ../test.jpg; sourceTree = "<group>"; };
+		B245055922567CCF006148C3 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 		B28DB366221C9D2000E7FC3A /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
 		B2EBB94C2173C4BB0007DC7D /* PrototypeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PrototypeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2EBB94F2173C4BB0007DC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -84,7 +84,6 @@
 		B2EBB9432173C4BB0007DC7D = {
 			isa = PBXGroup;
 			children = (
-				B28DB364221C9D1E00E7FC3A /* test.jpg */,
 				B2EBB94E2173C4BB0007DC7D /* PrototypeApp */,
 				B2EBB9632173C4BC0007DC7D /* PrototypeAppTests */,
 				B2EBB96E2173C4BC0007DC7D /* PrototypeAppUITests */,
@@ -106,14 +105,15 @@
 			isa = PBXGroup;
 			children = (
 				B28DB366221C9D2000E7FC3A /* test.jpg */,
+				4BBFC49D222CB09000B6BB54 /* eye.jpg */,
 				B2EBB94F2173C4BB0007DC7D /* AppDelegate.swift */,
 				B2EBB9512173C4BB0007DC7D /* ViewController.swift */,
 				B21BDF8221867EC6000294F5 /* Line.swift */,
 				B2EBB9532173C4BB0007DC7D /* Main.storyboard */,
-				B28DB362221C424800E7FC3A /* test.jpg */,
 				B2EBB9562173C4BC0007DC7D /* Assets.xcassets */,
 				B2EBB9582173C4BC0007DC7D /* LaunchScreen.storyboard */,
 				B2EBB95B2173C4BC0007DC7D /* Info.plist */,
+				B245055922567CCF006148C3 /* DemoView.swift */,
 			);
 			path = PrototypeApp;
 			sourceTree = "<group>";
@@ -241,10 +241,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EBB95A2173C4BC0007DC7D /* LaunchScreen.storyboard in Resources */,
-				B28DB365221C9D1E00E7FC3A /* test.jpg in Resources */,
 				B2EBB9572173C4BC0007DC7D /* Assets.xcassets in Resources */,
 				B2EBB9552173C4BB0007DC7D /* Main.storyboard in Resources */,
-				B28DB363221C424800E7FC3A /* test.jpg in Resources */,
+				4BBFC49E222CB09000B6BB54 /* eye.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +269,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B2EBB9522173C4BB0007DC7D /* ViewController.swift in Sources */,
+				B245055A22567CCF006148C3 /* DemoView.swift in Sources */,
 				B21BDF8321867EC6000294F5 /* Line.swift in Sources */,
 				B2EBB9502173C4BB0007DC7D /* AppDelegate.swift in Sources */,
 			);
@@ -447,13 +447,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HQZLCS4VR;
+				DEVELOPMENT_TEAM = B8P7P8596X;
 				INFOPLIST_FILE = PrototypeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pi.PrototypeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Pi3.PrototypeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,13 +465,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 2HQZLCS4VR;
+				DEVELOPMENT_TEAM = B8P7P8596X;
 				INFOPLIST_FILE = PrototypeApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = Pi.PrototypeApp;
+				PRODUCT_BUNDLE_IDENTIFIER = Pi3.PrototypeApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
