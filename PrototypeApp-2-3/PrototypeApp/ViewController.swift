@@ -66,17 +66,17 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
  //               let newImage = UIImage(ciImage: outputImage)
 //                pupil.image = newImage
         
-         let width: CGFloat = 60.0
-         let height: CGFloat = 60.0
 
         
-        self.demoView = DemoView(frame: CGRect(x: self.view.frame.size.width/2 - width/2, y: self.view.frame.size.height/2 - height/2, width: width, height: height))
+        self.demoView = DemoView(frame: CGRect(x: self.view.frame.size.width/2, y: self.view.frame.size.height/2, width: 150, height: 150))
+        
+        
         
         // Initialization code
     
         
-        demoView.isUserInteractionEnabled = true //pinching action setup
-        demoView.isMultipleTouchEnabled = true
+        self.demoView.isUserInteractionEnabled = true //pinching action setup
+        self.demoView.isMultipleTouchEnabled = true
         
         
        self.pinchGesture = UIPinchGestureRecognizer(target: self,action:#selector(handlePinch(recognizer:)))
@@ -86,16 +86,16 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
         self.demoView.addGestureRecognizer(self.pinchGesture)
         self.demoView.addGestureRecognizer(self.panGesture)
         
-        //imageView.transform = CGAffineTransform(scaleX: sender.scale, y: sender.scale)
         
-
         self.view.addSubview(demoView)
+
         
         
         }
 
     @IBAction func handlePinch(recognizer:UIPinchGestureRecognizer) {
-        demoView.transform = CGAffineTransform(scaleX: recognizer.scale, y: recognizer.scale)
+        //demoView.transform = CGAffineTransform(scaleX: recognizer.scale, y: recognizer.scale)
+        demoView.transform = demoView.transform.scaledBy(x: recognizer.scale, y: recognizer.scale)
         recognizer.scale = 1
     }
     
@@ -152,7 +152,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         let image = info[UIImagePickerController.InfoKey.editedImage] as! UIImage
         pupil.image = image
-        UIImageWriteToSavedPhotosAlbum(pupil.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil) //save image
+        //UIImageWriteToSavedPhotosAlbum(pupil.image!, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil) //save image
         dismiss(animated:true, completion: nil)
     }
     
@@ -189,7 +189,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate, UINavig
             green = color!.rgba.green
             blue = color!.rgba.blue
             //adjust the values for shades of blackness
-            if circle1.contains(point) && red < 0.2 && green < 0.2 && blue < 0.2{
+            if circle1.contains(point) && red < 0.1 && green < 0.1 && blue < 0.1{
                 //print(color)
                 //print(point)
                 
