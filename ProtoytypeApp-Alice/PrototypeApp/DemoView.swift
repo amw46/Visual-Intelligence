@@ -26,7 +26,7 @@ class DemoView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        self.backgroundColor = UIColor.init(red: 255.0, green: 255.0, blue: 255.0, alpha: 0)
+        self.backgroundColor = UIColor.init(red: 0, green: 0, blue: 0, alpha: 0)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -36,8 +36,10 @@ class DemoView: UIView {
     
     func createSquare() {
         
-        let halfOfFrameH = self.frame.size.height/2
-        let halfOfFrameW = self.frame.size.width/2
+        //let halfOfFrameH = self.frame.size.height/2
+        //let halfOfFrameW = self.frame.size.width/2
+        
+        
         // Initialize the path.
         path = UIBezierPath()
         
@@ -70,26 +72,27 @@ class DemoView: UIView {
         
         //self.circle = UIBezierPath(ovalIn: CGRect(x:halfOfFrameW, y: halfOfFrameH, width: 45, height: 45))
         self.circle = UIBezierPath(ovalIn: CGRect(x:halfOfFrameW - halfOfFrameH, y: 0.0, width: self.frame.size.height, height:self.frame.size.height))
-        UIColor.black.setStroke()
+        UIColor.blue.setStroke()
         //set line width
         circle.lineWidth = 3.0
         circle.stroke()
         
     }
+    
 
     override func draw(_ rect: CGRect) {
         self.createSquare()
         self.createCircle()
         // Specify the fill color and apply it to the path.
         //UIColor.orange.setFill()
-        UIColor.init(red: 255.0, green: 255.0, blue: 255.0, alpha: 0.0).setFill()
+        UIColor.init(red: 0, green: 0, blue: 0, alpha: 0.0).setFill()
         path.fill()
         
         //set line width of box
         //path.lineWidth = 5.0
         
         // Specify a border (stroke) color.
-        UIColor.black.setStroke()
+        UIColor.blue.setStroke()
         path.stroke()
     }
     

@@ -30,10 +30,7 @@ class Line: UIView {
         
        // circle = UIBezierPath(arcCenter: CGPoint(x: 208, y: 398), radius: CGFloat(60), startAngle: CGFloat(0), endAngle: CGFloat(Double.pi * 2), clockwise: true)
 
-        self.circle = UIBezierPath(ovalIn: CGRect(x: self.frame.size.width/2 - self.frame.size.height/2,
-                                                y: 0.0,
-                                                width: self.frame.size.height,
-                                                height: self.frame.size.height))
+        self.circle = UIBezierPath(ovalIn: CGRect(x: self.frame.size.width/2 - self.frame.size.height/2, y: 0.0, width: self.frame.size.height, height: self.frame.size.height))
       
         graph()
 
